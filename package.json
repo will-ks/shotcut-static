@@ -1,7 +1,7 @@
 {
-  "name": "ffmpeg-static",
-  "version": "2.3.0",
-  "description": "ffmpeg static binaries for Mac OSX and Linux and Windows",
+  "name": "shotcut-static",
+  "version": "0.0.1",
+  "description": "Installs static binaries of Shotcut video editor, including dependencies (eg. MLT Framework)",
   "main": "index.js",
   "files": [
     "index.js",
@@ -14,28 +14,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eugeneware/ffmpeg-static"
+    "url": "https://github.com/dambusm/shotcut-static"
   },
   "keywords": [
+    "shotcut",
+    "mlt",
+    "framework",
+    "melt",
+    "qmelt",
     "ffmpeg",
+    "ffprobe",
+    "ffplay",
     "static",
     "library",
     "binary",
-    "binaries",
-    "mac",
-    "linux",
-    "windows"
+    "binaries"
   ],
-  "author": "Eugene Ware <eugene@noblesamurai.com>",
-  "contributors": [
-    "Jannis R <mail@jannisr.de>"
-  ],
+  "author": "Will Schaller <dambusmedia@gmail.com>",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/eugeneware/ffmpeg-static/issues"
+    "url": "https://github.com/dambusm/shotcut-static/issues"
   },
   "dependencies": {},
   "devDependencies": {
-    "tape": "~2.3.2"
+    "tape": "^2.3.3"
   }
 }
