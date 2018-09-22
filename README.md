@@ -1,6 +1,6 @@
 # shotcut-static
 
-**Installs static binaries of Shotcut video editor, including Melt Framework**
+**Installs static binaries of Shotcut video editor, including Melt Framework.**
 Includes binaries of ffmpeg, ffplay, ffprobe, melt, qmelt, shotcut.
 
 Currently only supports Linux (64-bit).
