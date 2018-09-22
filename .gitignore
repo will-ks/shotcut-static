@@ -5,5 +5,3 @@ npm-debug.log
 
 build/*
 !build/index.sh
-
-bin/*
