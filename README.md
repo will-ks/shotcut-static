@@ -17,12 +17,28 @@ $ npm install shotcut-static
 
 ## Example Usage
 
-Returns the path of a statically linked Shotcut app installation on the local filesystem. Path contains shotcut, ffmpeg, ffplay, ffprobe, melt, qmelt.
+Returns the paths of statically linked binaries from the Shotcut installation on the local filesystem. Path contains shotcut, ffmpeg, ffplay, ffprobe, melt, qmelt.
 
 ```js
-var shotcut = require('shotcut-static');
-console.log(shotcut.path);
-// /home/will/Documents/Shotcut/Shotcut.app
+const shotcutStatic = require('shotcut-static');
+
+console.log(shotcutStatic.ffmpeg);
+// /home/will/my-app/node_modules/shotcut-static/bin/linux/x64/ffmpeg
+
+console.log(shotcutStatic.ffplay);
+// /home/will/my-app/node_modules/shotcut-static/bin/linux/x64/ffplay
+
+console.log(shotcutStatic.ffprobe);
+// /home/will/my-app/node_modules/shotcut-static/bin/linux/x64/ffprobe
+
+console.log(shotcutStatic.melt);
+// /home/will/my-app/node_modules/shotcut-static/bin/linux/x64/melt
+
+console.log(shotcutStatic.qmelt);
+// /home/will/my-app/node_modules/shotcut-static/bin/linux/x64/qmelt
+
+console.log(shotcutStatic.shotcut);
+// /home/will/my-app/node_modules/shotcut-static/bin/linux/x64/shotcut
 ```
 
 ## Sources of the binaries
