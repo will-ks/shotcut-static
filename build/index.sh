@@ -18,3 +18,11 @@ echo '  downloading'
 download $RELEASE linux-x64.tar.bz2
 echo '  extracting'
 $tar_exec -xvj -C ../bin/linux/x64  -f linux-x64.tar.bz2 --strip-components 2
+
+# npm does not include symlinks in packages (https://github.com/npm/npm/issues/13050).
+# This workaround replaces symlinks with copies of the originals. 
+cd ../bin/linux/x64/lib
+for f in $(find . -maxdepth 1 -type l)
+do
+    cp --remove-destination $(readlink -e $f) $f
+done

@@ -1,6 +1,6 @@
 {
   "name": "shotcut-static",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Installs static binaries of Shotcut video editor, including dependencies (eg. MLT Framework)",
   "main": "index.js",
   "files": [
