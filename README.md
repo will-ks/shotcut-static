@@ -12,7 +12,7 @@ Forked from [ffmpeg-static](https://github.com/eugeneware/ffmpeg-static#readme) 
 This module is installed via npm:
 
 ```bash
-$ npm install shotcut-static
+$ npm install https://github.com/dambusm/shotcut-static
 ```
 
 ## Example Usage
